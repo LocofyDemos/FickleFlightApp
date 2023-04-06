@@ -1,0 +1,126 @@
+.recentSearches {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.recentSearchesSection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-mini);
+}
+.iconVector {
+  position: relative;
+  width: 45px;
+  height: 39px;
+  flex-shrink: 0;
+}
+.icon {
+  border-radius: var(--br-base);
+  background-color: var(--color-palevioletred);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-smi) var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.text {
+  position: relative;
+  font-size: var(--font-size-mini);
+  letter-spacing: 0.04em;
+  font-family: var(--font-roboto);
+  color: var(--color-gray-100);
+  text-align: center;
+}
+.tripMenuItem {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.icon1,
+.icon2,
+.icon3 {
+  border-radius: var(--br-base);
+  background-color: var(--color-mediumspringgreen);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-smi) var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.icon2,
+.icon3 {
+  background-color: var(--color-cornflowerblue-100);
+}
+.icon3 {
+  background-color: var(--color-yellowgreen);
+}
+.flightDetails,
+.prepareMenu,
+.tripMenu,
+.upcomingFlightSection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.flightDetails,
+.prepareMenu,
+.upcomingFlightSection {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-lightgray);
+}
+.flightDetails,
+.upcomingFlightSection {
+  gap: var(--gap-17xl);
+  font-size: var(--font-size-5xl);
+  color: var(--color-cornflowerblue-300);
+}
+.upcomingFlightSection {
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1100px) {
+  .prepareMenu {
+    width: 100%;
+  }
+  .flightDetails {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .recentSearchesSection {
+    flex-direction: column;
+  }
+  .tripMenuItem {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+    width: 33.33%;
+    text-align: center;
+  }
+  .tripMenu {
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -28px;
+    margin-right: -28px;
+  }
+}

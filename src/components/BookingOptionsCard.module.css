@@ -1,0 +1,21 @@
+.sectionTitle {
+  position: relative;
+  letter-spacing: 0.26px;
+}
+.stopsOptions,
+.stopsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.stopsOptions {
+  gap: 0;
+}
+.stopsSection {
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-dimgray-300);
+  font-family: var(--font-roboto);
+}

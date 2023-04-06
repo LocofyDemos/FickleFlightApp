@@ -1,0 +1,108 @@
+.hotelsTagline {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 48px;
+  display: inline-block;
+  width: 1280px;
+}
+.recommended {
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.filterOption {
+  background-color: var(--color-white);
+  color: var(--color-cornflowerblue-200);
+}
+.filterOption,
+.filterOption1 {
+  border-radius: var(--br-8xl);
+  border: 1px solid var(--color-white);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-2xs) var(--padding-2xl);
+  align-items: center;
+  justify-content: center;
+}
+.filterOptions,
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.filterOptions {
+  flex-direction: row;
+  text-align: center;
+  font-size: var(--font-size-base);
+  font-family: var(--font-roboto);
+}
+.title {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 1440px;
+  flex-direction: column;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+}
+.banner,
+.header {
+  align-self: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.banner {
+  position: relative;
+  height: 193px;
+  flex-shrink: 0;
+  background-image: url(/public/banner@3x.png);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-image: url(/public/header@3x.png);
+  text-align: left;
+  font-size: var(--font-size-23xl);
+  color: var(--color-white);
+  font-family: var(--font-baloo-bhai);
+}
+@media screen and (max-width: 1200px) {
+  .banner,
+  .title {
+    box-sizing: border-box;
+  }
+  .title {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+  }
+  .banner {
+    padding: var(--padding-2xl) var(--padding-21xl) var(--padding-2xl)
+      var(--padding-22xl);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .banner,
+  .title {
+    box-sizing: border-box;
+  }
+  .title {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+  }
+  .banner {
+    padding: var(--padding-2xl) var(--padding-5xl);
+  }
+}
+@media screen and (max-width: 650px) {
+  .hotelsTagline {
+    font-size: var(--font-size-13xl);
+  }
+  .recommended {
+    font-size: var(--font-size-sm);
+  }
+}

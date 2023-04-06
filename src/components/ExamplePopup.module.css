@@ -1,0 +1,30 @@
+.video {
+  align-self: stretch;
+  position: relative;
+  height: 436.8px;
+  flex-shrink: 0;
+}
+.examplePopup {
+  position: relative;
+  border-radius: 6.24px;
+  background-color: var(--color-white);
+  width: 702px;
+  display: flex;
+  flex-direction: column;
+  padding: 15.59999942779541px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+@media screen and (max-width: 650px) {
+  .video {
+    height: 50.625vw !important;
+  }
+  .examplePopup {
+    padding: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+}

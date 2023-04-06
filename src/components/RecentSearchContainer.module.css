@@ -1,0 +1,65 @@
+.departure {
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+.planeicon {
+  position: relative;
+  width: 118px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.arrival {
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: right;
+}
+.departureInfo,
+.toAndFrom {
+  display: flex;
+  flex-direction: row;
+}
+.toAndFrom {
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+}
+.departureInfo {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.recentSearch {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-whitesmoke-200);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-2xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-cornflowerblue-300);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1200px) {
+  .recentSearch {
+    width: 520px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .recentSearch {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .recentSearch {
+    flex: unset;
+    align-self: stretch;
+  }
+}

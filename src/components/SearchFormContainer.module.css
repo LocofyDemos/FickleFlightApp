@@ -1,0 +1,161 @@
+.searchFormLabel {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.radiobuttonuncheckedIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.padding {
+  border-radius: var(--br-lgi);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs);
+  align-items: center;
+  justify-content: flex-start;
+}
+.label {
+  position: relative;
+  letter-spacing: 0.15px;
+  line-height: 150%;
+}
+.radio {
+  overflow: hidden;
+}
+.flightOptions,
+.formTitleGroup,
+.radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flightOptions {
+  gap: var(--gap-xl);
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-400);
+}
+.formTitleGroup {
+  align-self: stretch;
+  overflow: hidden;
+  padding: var(--padding-8xs);
+  gap: var(--gap-8xs);
+}
+.departureAutocomplete {
+  align-self: stretch;
+  flex: 1;
+}
+.inputsRow {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-8xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.searchFlights {
+  position: relative;
+  font-size: var(--font-size-mini);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+}
+.buttonGroup,
+.searchButton {
+  display: flex;
+  justify-content: center;
+}
+.searchButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-3xs);
+  background-color: var(--color-orange-200);
+  border-radius: var(--br-9xs);
+  width: 164px;
+  height: 56px;
+  flex-shrink: 0;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+.searchButton:hover {
+  background-color: var(--color-darkgoldenrod-100);
+}
+.buttonGroup {
+  flex-direction: column;
+  padding: var(--padding-8xs);
+  align-items: flex-start;
+}
+.formInputsRow,
+.searchForm {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.searchForm {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: var(--padding-xl);
+  gap: var(--gap-9xs);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1100px) {
+  .inputsRow {
+    width: 100%;
+    flex: unset;
+    align-self: stretch;
+  }
+  .buttonGroup {
+    width: 100%;
+    text-align: left;
+  }
+  .formInputsRow,
+  .searchForm {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .searchFormLabel {
+    width: 100%;
+    padding-bottom: var(--padding-3xs);
+    margin-bottom: 6px;
+    flex: unset;
+    align-self: stretch;
+  }
+  .flightOptions {
+    width: 100%;
+  }
+  .formTitleGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .departureAutocomplete {
+    flex: unset;
+    align-self: stretch;
+  }
+  .inputsRow {
+    flex-direction: column;
+  }
+  .searchButton {
+    width: 100%;
+  }
+  .searchForm {
+    margin-top: 20px;
+  }
+}

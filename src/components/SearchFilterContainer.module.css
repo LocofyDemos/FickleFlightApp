@@ -1,0 +1,33 @@
+.results {
+  position: relative;
+  letter-spacing: 0.26px;
+}
+.seperatorIcon {
+  position: relative;
+  width: 228px;
+  height: 1px;
+  flex-shrink: 0;
+}
+.resultsSummary,
+.searchFilters {
+  width: 228px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.searchFilters {
+  width: 253px;
+  flex-shrink: 0;
+  gap: var(--gap-20xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-dimgray-300);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1200px) {
+  .searchFilters {
+    display: none;
+  }
+}
